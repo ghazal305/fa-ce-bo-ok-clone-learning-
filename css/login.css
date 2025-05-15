@@ -1,0 +1,97 @@
+/*general  style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+/*for lables*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(0);
+}
+/*content  style */
+.login__logo,
+.login__form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/*logo style */
+.login__logo {
+  width: 50%;
+}
+.login__logo__img {
+  width: 100%;
+}
+.login__logo__img img {
+  max-width: 100%;
+}
+.login__logo h2 {
+  margin-top: 10px;
+}
+/*form style */
+.login__form {
+  width: 40%;
+  background-color: #f7f6f6;
+  border-radius: 7px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.login__form input,
+.login__form button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+  border: 1px solid #888585;
+  color: white;
+}
+.login__form button {
+  background-color: #6868fd;
+  border: none;
+}
+.login__form__forgottenPass,
+.login__form__newAcount {
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.login__form__newAcount {
+  background-color: #0c9c0c;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.login__form__newAcount a,
+.login__form button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.login__form__forgottenPass a,
+.login__form__newAcount a {
+  text-decoration: none;
+}

@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>log in</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="login__container">
+        <!-- ======logo===== -->
+        <div class="login__logo">
+          <figure class="login__logo__img">
+            <img src="images/logo.jpg" alt="logo facebook" />
+          </figure>
+          <h2>
+            Facebook helps you connect and share with the people in your life.
+          </h2>
+        </div>
+        <!-- ====== form ===== -->
+        <form class="login__form">
+          <label for="email" class="visually-hidden">Email Adress</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <label for="password" class="visually-hidden">password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <button>log in</button>
+          <div class="login__form__forgottenPass">
+            <!--  find your acount page link -->
+            <a href="html/findAcount.html">Forgotten password?</a>
+          </div>
+          <hr />
+          <div class="login__form__newAcount">
+            <!-- link page sinup -->
+            <a href="html/signup.html">Create new acount</a>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
