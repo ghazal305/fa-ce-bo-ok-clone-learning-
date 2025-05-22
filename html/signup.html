@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>sign up</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="../css/signup.css" />
+  </head>
+  <body>
+    <!-- header logo -->
+    <header class="header">
+      <div class="container">
+        <figure class="header__logo">
+          <img src="../images/logo.jpg" alt="logo" />
+        </figure>
+      </div>
+    </header>
+    <!-- section sign up -->
+    <section class="signup">
+      <div class="container">
+        <div class="row">
+          <!-- header -->
+          <div class="signup__header">
+            <h2>Create a new account</h2>
+            <p>It's quick and easy.</p>
+          </div>
+          <hr />
+          <!-- form -->
+          <div class="signup__form">
+            <!-- form name -->
+            <div class="signup__form__name flex-row">
+              <label for="text" class="visually-hidden">first name</label>
+              <input
+                type="text"
+                id="text"
+                name="text"
+                placeholder="First Name"
+                required
+              />
+              <label for="text" class="visually-hidden">last lame</label>
+              <input
+                type="text"
+                id="text"
+                name="text"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            <!--  Date Of Birth  -->
+            
+            <div class="signup__form__birthDate">
+              <label id="birthDate">Date of birth</label>
+              <div class="signup__form__birthDate__selectOption  flex-row">
+                <label for="month" class="visually-hidden">Month</label>
+                <select id="month" name="month">
+                  <option value="">Month</option>
+                </select>
+
+                <label for="day" class="visually-hidden">Day</label>
+                <select id="day" name="day">
+                  <option value="">Day</option>
+                </select>
+
+                <label for="year" class="visually-hidden">Year</label>
+                <select id="year" name="year">
+                  <option value="">Year</option>
+                </select>
+              </div>
+            </div>
+            <!--  gender  -->
+            
+              <label class="label-gender" id="genderLabel">Gender</label>
+
+            <div class="signup__form__gender flex-row">
+              <label class="flex-row">
+                Female
+                <input type="radio" name="gender" value="female" />
+              </label>
+
+              <label class="flex-row">
+                Male
+                <input type="radio" name="gender" value="male" />
+              </label>
+            </div>
+            <!--  email  -->
+            <div class="signup__email">
+              <label for="email" class="visually-hidden">Email Adress</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <!--  password  -->
+            <div class="signup__password">
+              <label for="password" class="visually-hidden">password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
+                required
+              />
+            </div>
+            <div class="signup__btn">
+              <button>Sign Up</button>
+            </div>
+            <div class="signup__linkHaveAcount">
+              <a href="../index.html">Already have an account?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/signup.js"></script>
+  </body>
 </html>

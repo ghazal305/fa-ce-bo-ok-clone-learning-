@@ -1,0 +1,151 @@
+/*general  style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+/*for lable*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(0);
+}
+hr {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+/*header*/
+
+.header__logo {
+  width: 30%;
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*sign up*/
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 15px;
+  width: 35%;
+}
+
+.signup{
+  margin-bottom: 20px;
+}
+
+.signup__header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.signup__header h2 {
+  margin-bottom: 10px;
+}
+
+.signup__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__form__name {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.signup__form__name input {
+  border: 1px solid #5f5f5f;
+  padding: 10px;
+  width: 48%;
+  border-radius: 5px;
+}
+
+.signup__form__birthDate {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.signup__form__birthDate label {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.signup__form__birthDate__selectOption {
+  margin-top: 5px;
+}
+.signup__form__birthDate__selectOption select {
+  width: 30%;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.signup__form__gender {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.signup__form__gender label {
+  width: 48%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #5f5f5f;
+  background-color: #ffffff;
+}
+
+.label-gender {
+  font-size: 14px;
+  opacity: 0.7;
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+/*email , password and button */
+
+.signup__email,
+.signup__password {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.signup__email input,
+.signup__password input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #5f5f5f;
+}
+
+.signup__btn {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.signup__btn button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #0caf0c;
+  color: #ffffff;
+  font-size: 18px;
+}
