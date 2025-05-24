@@ -1,11 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container d-flex__container">
+        <!-- Logo -->
+        <div class="navbar__logo">
+          <a href="#">
+            <img
+              class="image-width"
+              src="../images/image-logo1.png"
+              alt="logo social book"
+            />
+          </a>
+        </div>
+
+        <!-- Search -->
+        <div class="navbar__search">
+          <label class="visually-hidden" for="search">Search</label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+        </div>
+
+        <!-- Profile -->
+        <div class="navbar__profile">
+          <img
+            src="../images/profile.jpg"
+            alt="Profile image"
+            class="profile-img"
+          />
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="d-flex__container">
+          <aside
+            class="left-sidebar"
+            role="navigation"
+            aria-label="Main sidebar navigation"
+          >
+            <ul class="sidebar-menu" role="list">
+              <li role="listitem">
+                <a href="users.html" aria-label="View all users">
+                  <i class="fas fa-users"></i> All Users
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="#" aria-label="View your posts">
+                  <i class="fas fa-file-alt"></i> My Posts
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="#" aria-label="View your photos">
+                  <i class="fas fa-image"></i> Photos
+                </a>
+              </li>
+              <li role="listitem">
+                <a href="#" aria-label="Go to settings">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+              </li>
+              <li role="listitem">
+                <a
+                  href="index.html"
+                  aria-label="Sign out and return to login page"
+                >
+                  <i class="fas fa-sign-out-alt"></i> Sign Out
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <section class="posts">
+            <div class="stories">
+              <h3>Stories</h3>
+              <div class="stories__list">
+                <div class="story">
+                  <img src="../images/story1.jpg" alt="story 1" />
+                  <span>Mohamed</span>
+                </div>
+
+                <div class="story">
+                  <img src="../images/story2.jpg" alt="story 2" />
+                  <span>Ahmed</span>
+                </div>
+
+                <div class="story">
+                  <img src="../images/story3.jpeg" alt="story 3" />
+                  <span>Create Story</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- create post -->
+            <div class="create-post">
+              <img
+                src="../images/profile.jpg"
+                alt="Your Profile"
+                class="creator-img"
+              />
+              <input type="text" placeholder="What's on your mind?" />
+              <button>Post</button>
+            </div>
+
+            <!-- List of Posts -->
+            <div class="post-list">
+              <div class="post">
+                <div class="post-header">
+                  <img src="../images/profile1.jpg" alt="User" />
+                  <span>mohamed ghazal</span>
+                </div>
+                <p>my first post</p>
+
+                <!-- Post Actions -->
+                <div class="post-actions">
+                  <button><i class="fas fa-thumbs-up"></i> Like</button>
+                  <button><i class="fas fa-comment-dots"></i> Comment</button>
+                  <button><i class="fas fa-share-nodes"></i> Share</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="right-sidebar">
+            <div class="chat-wrapper">
+              <div class="chat-header">
+                <i class="fas fa-comment-dots"></i>
+                <span>Chat</span>
+              </div>
+
+              <div class="chatbot-box">
+                <div class="chat-messages">
+                  <p class="bot-msg">🤖 Hi there! How can I help you today?</p>
+                </div>
+                <input
+                  type="text"
+                  class="chat-input"
+                  placeholder="Type your message..."
+                  aria-label="Type your message"
+                />
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
