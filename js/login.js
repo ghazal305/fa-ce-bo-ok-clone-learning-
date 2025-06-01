@@ -17,7 +17,7 @@ async function signInUser() {
 
   try {
     const res = await fetch(
-      `http://localhost:3000/users?email=${userEmail}&password=${userPassword}`
+      `https://legendary-spring-archeology.glitch.me/users?email=${userEmail}&password=${userPassword}`
     );
     const users = await res.json();
 

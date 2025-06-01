@@ -81,13 +81,16 @@ function years() {
 /*create users */
 async function createUser(userData) {
   try {
-    const res = await fetch("http://localhost:3000/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(userData),
-    });
+    const res = await fetch(
+      "https://legendary-spring-archeology.glitch.me/users",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      }
+    );
 
     if (res.ok) {
       clearForm();

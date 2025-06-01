@@ -115,27 +115,16 @@
                 alt="Your Profile"
                 class="creator-img"
               />
-              <input type="text" placeholder="What's on your mind?" />
-              <button>Post</button>
+              <input
+                type="text"
+                id="postContent"
+                placeholder="What's on your mind?"
+              />
+              <button id="btnPost">Post</button>
             </div>
 
             <!-- List of Posts -->
-            <div class="post-list">
-              <div class="post">
-                <div class="post-header">
-                  <img src="../images/profile1.jpg" alt="User" />
-                  <span>mohamed ghazal</span>
-                </div>
-                <p>my first post</p>
-
-                <!-- Post Actions -->
-                <div class="post-actions">
-                  <button><i class="fas fa-thumbs-up"></i> Like</button>
-                  <button><i class="fas fa-comment-dots"></i> Comment</button>
-                  <button><i class="fas fa-share-nodes"></i> Share</button>
-                </div>
-              </div>
-            </div>
+            <div class="post-list" id="postsContainer"></div>
           </section>
 
           <aside class="right-sidebar">
