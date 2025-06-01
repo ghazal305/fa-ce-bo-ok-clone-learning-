@@ -38,6 +38,10 @@ a {
   padding: 20px;
 }
 
+span {
+  color: #ffff;
+}
+
 /*Container */
 .container {
   max-width: 1200px;
